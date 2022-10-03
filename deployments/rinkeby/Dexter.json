@@ -1,0 +1,85 @@
+{
+  "address": "0x083A24AfAf990F3E16f301E16112b4b3D56AD9e2",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x11305cf3a029b77a10771d092cedd1eeacb07afcbd8d94d8bc6705fbb4f0f654",
+  "receipt": {
+    "to": null,
+    "from": "0x7474658eDA4B4A635Cb13941E7b7f285eaB2e686",
+    "contractAddress": "0x083A24AfAf990F3E16f301E16112b4b3D56AD9e2",
+    "transactionIndex": 4,
+    "gasUsed": "130915",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x59f0e6081e605cc1c11e9104347a5927f0f7c550093c4f1094a4b4798734e2a3",
+    "transactionHash": "0x11305cf3a029b77a10771d092cedd1eeacb07afcbd8d94d8bc6705fbb4f0f654",
+    "logs": [],
+    "blockNumber": 11443106,
+    "cumulativeGasUsed": "1218975",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "e03768d0e9df222d8726e0ef01c6562f",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/Dexter.sol\":\"Dexter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Dexter.sol\":{\"content\":\"//SPDX-License-Identifier: MIT\\n\\npragma solidity 0.6.0;\\n\\ncontract Dexter {\\n  function balanceOf(address) external pure returns (uint256) {\\n    return 100;\\n  }\\n\\n  function transferFrom(\\n    address,\\n    address,\\n    uint256\\n  ) external pure returns (bool) {\\n    return true;\\n  }\\n}\\n\",\"keccak256\":\"0x05935f70126abe1451ddd532a3ff696d3482eafe24cea28e34d4e9319529f1f0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610167806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806323b872dd1461003b57806370a08231146100c1575b600080fd5b6100a76004803603606081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610119565b604051808215151515815260200191505060405180910390f35b610103600480360360208110156100d757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610126565b6040518082815260200191505060405180910390f35b6000600190509392505050565b60006064905091905056fea264697066735822122017251258afb655ebdb8a01fe115e0af8c3366c8b85fe383d4b6867e12c5e507b64736f6c63430006000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806323b872dd1461003b57806370a08231146100c1575b600080fd5b6100a76004803603606081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610119565b604051808215151515815260200191505060405180910390f35b610103600480360360208110156100d757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610126565b6040518082815260200191505060405180910390f35b6000600190509392505050565b60006064905091905056fea264697066735822122017251258afb655ebdb8a01fe115e0af8c3366c8b85fe383d4b6867e12c5e507b64736f6c63430006000033",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/CheapBuyer.sol": {
+      "content": "//SPDX-License-Identifier: MIT\n\npragma solidity 0.6.0;\n\ninterface Buyer {\n  function price() external view returns (uint256);\n}\n\ncontract CheapBuyer is Buyer {\n  function price() external view override returns (uint256) {\n    uint256 _price = 200;\n    _price -= 100;\n    return _price;\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

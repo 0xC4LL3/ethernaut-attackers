@@ -1,0 +1,41 @@
+{
+  "address": "0xb226871b41e218D74cbb4f05a93c6CAd11B46842",
+  "abi": [
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "transactionHash": "0xf4c9a8121ea22df849557b226cb4347990223cf38172720f6e8e049de0a01a26",
+  "receipt": {
+    "to": null,
+    "from": "0x7474658eDA4B4A635Cb13941E7b7f285eaB2e686",
+    "contractAddress": "0xb226871b41e218D74cbb4f05a93c6CAd11B46842",
+    "transactionIndex": 11,
+    "gasUsed": "69433",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x182b937c0ac041d2673d5f08ad780004ae71859b7a5eae9d6de39037d19458b0",
+    "transactionHash": "0xf4c9a8121ea22df849557b226cb4347990223cf38172720f6e8e049de0a01a26",
+    "logs": [],
+    "blockNumber": 11425542,
+    "cumulativeGasUsed": "1039226",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 7,
+  "solcInputHash": "7efc55feb2c7cddc0e5e0755be82eb64",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/Denier.sol\":\"Denier\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Denier.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.6.0;\\n\\ncontract Denier {\\n  function deny() internal {\\n    deny();\\n  }\\n\\n  fallback() external payable {\\n    deny();\\n  }\\n}\\n\",\"keccak256\":\"0xe76e893ce9f483a023f75fdcbb68c2ff79395e6a3130d1c87218b16ab2871fad\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50604a80601d6000396000f3fe6080604052600a600c565b005b6012600c565b56fea26469706673582212208a9ffa4f626c08d143eeccab36a5bb40672c5d1412912e9011d8699e59bb165164736f6c63430006000033",
+  "deployedBytecode": "0x6080604052600a600c565b005b6012600c565b56fea26469706673582212208a9ffa4f626c08d143eeccab36a5bb40672c5d1412912e9011d8699e59bb165164736f6c63430006000033",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

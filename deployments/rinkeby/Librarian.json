@@ -1,0 +1,133 @@
+{
+  "address": "0x86081fd245AdC0A6d9d631dC3b8dc8A00e8AeD76",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTime",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeZone1Library",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeZone2Library",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x97cb326d2c250b94e48463cfb909b587cfd9042d2b8a7807111aa64b60d6005f",
+  "receipt": {
+    "to": null,
+    "from": "0x7474658eDA4B4A635Cb13941E7b7f285eaB2e686",
+    "contractAddress": "0x86081fd245AdC0A6d9d631dC3b8dc8A00e8AeD76",
+    "transactionIndex": 6,
+    "gasUsed": "179461",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x4047e199188599a1dd28d6f4151e04af053e11a603976ecebe60021a1547c3ff",
+    "transactionHash": "0x97cb326d2c250b94e48463cfb909b587cfd9042d2b8a7807111aa64b60d6005f",
+    "logs": [],
+    "blockNumber": 11420820,
+    "cumulativeGasUsed": "669562",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "0a28ab0f174f9838e36b8482b85e118f",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"setTime\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"timeZone1Library\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"timeZone2Library\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/Librarian.sol\":\"Librarian\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Librarian.sol\":{\"content\":\"//SDPX-License-Identifier: MIT\\n\\npragma solidity 0.6.0;\\n\\ncontract Librarian {\\n  address public timeZone1Library;\\n  address public timeZone2Library;\\n  address public owner;\\n  uint256 storedTime;\\n\\n  function setTime(uint256) public {\\n    owner = address(tx.origin);\\n  }\\n}\\n\",\"keccak256\":\"0x913564d6b857f5ba4a612a4042c0f620c78fe50a5c0d0e4ed5e79fd5d4453e17\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610248806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806327d6974f146100515780633beb26c41461009b5780633dc79422146100c95780638da5cb5b14610113575b600080fd5b61005961015d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c7600480360360208110156100b157600080fd5b8101908080359060200190929190505050610183565b005b6100d16101c7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61011b6101ec565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b32600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea26469706673582212202935eb08146edc1e357c91e8ab4a2262d9d06f755903b806f605c2550b9bcbc664736f6c63430006000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806327d6974f146100515780633beb26c41461009b5780633dc79422146100c95780638da5cb5b14610113575b600080fd5b61005961015d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c7600480360360208110156100b157600080fd5b8101908080359060200190929190505050610183565b005b6100d16101c7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61011b6101ec565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b32600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea26469706673582212202935eb08146edc1e357c91e8ab4a2262d9d06f755903b806f605c2550b9bcbc664736f6c63430006000033",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/Librarian.sol:Librarian",
+        "label": "timeZone1Library",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 5,
+        "contract": "contracts/Librarian.sol:Librarian",
+        "label": "timeZone2Library",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 7,
+        "contract": "contracts/Librarian.sol:Librarian",
+        "label": "owner",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_address"
+      },
+      {
+        "astId": 9,
+        "contract": "contracts/Librarian.sol:Librarian",
+        "label": "storedTime",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

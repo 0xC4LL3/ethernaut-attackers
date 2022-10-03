@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/CheapBuyer.sol": {
+      "content": "//SPDX-License-Identifier: MIT\n\npragma solidity 0.6.0;\n\ninterface Buyer {\n  function price() external view returns (uint256);\n}\n\ncontract CheapBuyer is Buyer {\n  address shop = 0x7E10AF58E3c9B45A13161ebd7B90760e2043E3CF;\n\n  function price() external view override returns (uint256) {\n    bool discount;\n    if (!discount) {\n      discount = true;\n      return 100;\n    }\n    return 0;\n  }\n\n  function _buy() public returns (bool success) {\n    (success, ) = shop.call(abi.encodeWithSignature(\"buy()\"));\n    require(success, \"Could not buy.\");\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

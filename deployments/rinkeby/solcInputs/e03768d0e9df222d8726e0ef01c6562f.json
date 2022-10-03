@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Dexter.sol": {
+      "content": "//SPDX-License-Identifier: MIT\n\npragma solidity 0.6.0;\n\ncontract Dexter {\n  function balanceOf(address) external pure returns (uint256) {\n    return 100;\n  }\n\n  function transferFrom(\n    address,\n    address,\n    uint256\n  ) external pure returns (bool) {\n    return true;\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

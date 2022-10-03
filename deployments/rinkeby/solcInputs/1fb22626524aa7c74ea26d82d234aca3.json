@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Denier.sol": {
+      "content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.0;\n\ncontract Denier {\n  address denial = 0x3e61c6AeE5D672361Aa1d08778AFB7C84D3249e2;\n\n  fallback() external payable {\n    assembly {\n      stop()\n    }\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

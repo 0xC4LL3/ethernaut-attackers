@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Librarian.sol": {
+      "content": "//SDPX-License-Identifier: MIT\n\npragma solidity 0.6.0;\n\ncontract Librarian {\n  address public timeZone1Library;\n  address public timeZone2Library;\n  address public owner;\n  uint256 storedTime;\n\n  function setTime(uint256) public {\n    owner = address(tx.origin);\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
